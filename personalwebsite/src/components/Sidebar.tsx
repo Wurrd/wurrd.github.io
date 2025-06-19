@@ -37,17 +37,17 @@ export default function Sidebar({
           {links.map(({ href, label }) => {
             const isActive = pathname === href;
             return (
-              <Link key={href} href={href}>
-                <a
-                  className={`block px-3 py-2 rounded ${
-                    isActive
-                      ? 'bg-red-500 text-white'
-                      : 'bg-gray-200 text-black hover:bg-gray-300'
-                  }`}
-                  onClick={onClose}
-                >
-                  {label}
-                </a>
+              <Link
+                key={href}
+                href={href}
+                className={`block px-3 py-2 rounded ${
+                  isActive
+                    ? 'bg-red-500 text-white'
+                    : 'bg-gray-200 text-black hover:bg-gray-300'
+                }`}
+                onClick={onClose}
+              >
+                {label}
               </Link>
             );
           })}

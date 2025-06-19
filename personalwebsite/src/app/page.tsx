@@ -7,7 +7,7 @@ export default function About() {
         </div>
         <div className="text-black">
           <p>
-            Write your about text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            I am Howard Jin
           </p>
         </div>
       </div>
