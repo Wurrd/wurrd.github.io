@@ -4,7 +4,7 @@ export const metadata = {
   title: "Wurrd's Personal Website",
   description: "Next.js and Tailwindcss",
   icons: {
-    icon: isProd ? '/your-repo-name/favicon.ico' : '/favicon.ico',
+    icon: "/favicon.ico",
   },
 };
 
