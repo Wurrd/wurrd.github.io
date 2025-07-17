@@ -6,6 +6,8 @@ export const metadata = {
   description: 'A Next.js 14 + Tailwind site',
   icons: {
     icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+
   },
 };
 
