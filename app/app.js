@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout activePage="home">
       <div className="flex space-x-6 items-start">
         <div>
           <img src="/photo.jpg" alt="Passport Photo" className="w-48 h-auto" />
