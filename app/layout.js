@@ -1,11 +1,8 @@
 import '../styles/globals.css';
 
 export const metadata = {
-  title: "Wurrd's Personal Website",
-  description: "Next.js and Tailwindcss",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  title: 'Your Site Title',
+  description: 'A Next.js 14 + Tailwind site',
 };
 
 export default function RootLayout({ children }) {
