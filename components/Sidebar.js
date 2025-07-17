@@ -1,4 +1,5 @@
-import Link from "next/link";
+'use client';
+import Link from 'next/link';
 
 const navItems = ["About", "Socials", "Projects", "Contact"];
 
