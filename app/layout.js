@@ -1,8 +1,8 @@
 import '../styles/globals.css';
 
 export const metadata = {
-  title: "Howard's Personal Website",
-  description: 'A Next.js 14 + Tailwind site',
+  title: "Your Site Title",
+  description: "Your site description",
   icons: {
     icon: "/favicon.ico",
   },
