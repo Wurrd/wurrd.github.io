@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 
 export const metadata = {
-  title: 'Your Site Title',
+  title: "Howard's Site",
   description: 'A Next.js 14 + Tailwind site',
 };
 
