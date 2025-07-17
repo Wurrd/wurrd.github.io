@@ -4,6 +4,9 @@ import '../styles/globals.css';
 export const metadata = {
   title: "Howard's Site",
   description: 'A Next.js 14 + Tailwind site',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
