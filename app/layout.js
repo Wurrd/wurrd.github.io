@@ -1,10 +1,10 @@
 import '../styles/globals.css';
 
 export const metadata = {
-  title: "Your Site Title",
-  description: "Your site description",
+  title: "Wurrd's Personal Website",
+  description: "Next.js and Tailwindcss",
   icons: {
-    icon: "/favicon.ico",
+    icon: isProd ? '/your-repo-name/favicon.ico' : '/favicon.ico',
   },
 };
 

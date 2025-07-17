@@ -1,6 +1,7 @@
-/** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
   output: 'export',
   trailingSlash: true,
+  basePath: isProd ? '/your-repo-name' : '',
+  assetPrefix: isProd ? '/your-repo-name/' : '',
 }
