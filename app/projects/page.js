@@ -1,32 +1,42 @@
 import Layout from "../../components/Layout";
 
 const projects = [
-  { title: "League of Legends Discord Bot", url: "https://github.com/Googolplexic/LoL-discord-bot", color: "bg-red-600", desc: "Discord bot for LoL utilities" },
-  { title: "Blend In: Game", url: "https://github.com/TMZero-c/CMPT371Project", color: "bg-green-500", desc: "Multiplayer stealth game" },
-  { title: "CloudCue", url: "https://github.com/CMPT-276-SUMMER-2025/final-project-21-spring", color: "bg-blue-500", desc: "Cloud audio platform" },
-  { title: "Adobe Express Add-on", url: "https://github.com/Googolplexic/beSquare", color: "bg-yellow-500", desc: "Add-on for Adobe Express" },
-  { title: "Emergency Event Reporter", url: "https://github.com/MACHI-NE/MACHI-NE-", color: "bg-purple-500", desc: "Report emergencies quickly" },
-  { title: "Salmon Run: Game", url: "https://github.com/Marcetho/salmon-run", color: "bg-indigo-500", desc: "Local co-op arcade game" },
+  { title: "League of Legends Discord Bot", url: "https://github.com/Googolplexic/LoL-discord-bot", thumb: "bg-red-600" },
+  { title: "Blend In: Game", url: "https://github.com/TMZero-c/CMPT371Project", thumb: "bg-indigo-500" },
+  { title: "CloudCue", url: "https://github.com/CMPT-276-SUMMER-2025/final-project-21-spring", thumb: "bg-emerald-500" },
+  { title: "Adobe Express Add-on", url: "https://github.com/Googolplexic/beSquare", thumb: "bg-yellow-500" },
+  { title: "Emergency Event Reporter", url: "https://github.com/MACHI-NE/MACHI-NE-", thumb: "bg-pink-500" },
+  { title: "Salmon Run: Game", url: "https://github.com/Marcetho/salmon-run", thumb: "bg-cyan-500" },
+  { title: "Project Meteion", url: "https://github.com/oopy-goopy/Project-Meteion", thumb: "bg-gray-600" },
 ];
 
 export default function Projects() {
   return (
     <Layout activePage="Projects">
+      {/* grid stays the same (minimal change) */}
       <div className="grid grid-cols-2 gap-6">
-        {projects.map((proj) => (
-          <a
-            key={proj.title}
-            href={proj.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-start space-x-4 p-4 bg-white rounded-md shadow hover:shadow-md transition"
+        {projects.map((proj, index) => (
+          /* each project is its own section/article — minimal markup change */
+          <section
+            key={proj.url + index}
+            className="flex space-x-4 items-start p-4 rounded-md bg-white shadow-sm"
           >
-            <div className={`${proj.color} w-24 h-24 rounded-md flex-shrink-0`} />
+            {/* keep the same thumbnail styles; change color per-project if you want */}
+            <div className={`${proj.thumb} w-24 h-24 rounded-md`} />
+
+            {/* project content */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">{proj.title}</h3>
-              <p className="text-sm text-gray-600 mt-1">{proj.desc}</p>
+              <h3 className="text-gray-800 mt-1 text-lg font-medium">{proj.title}</h3>
+              <a
+                href={proj.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm text-blue-600 hover:underline mt-1"
+              >
+                View on GitHub
+              </a>
             </div>
-          </a>
+          </section>
         ))}
       </div>
     </Layout>
