@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-const navItems = ['About','Socials','Projects','Contact'];
+const navItems = ['About','Resume','Projects','Contact'];
 
 export default function Sidebar({ activePage }) {
   return (
