@@ -13,18 +13,14 @@ const projects = [
 export default function Projects() {
   return (
     <Layout activePage="Projects">
-      {/* grid stays the same (minimal change) */}
       <div className="grid grid-cols-2 gap-6">
         {projects.map((proj, index) => (
-          /* each project is its own section/article — minimal markup change */
           <section
             key={proj.url + index}
             className="flex space-x-4 items-start p-4 rounded-md bg-white shadow-sm"
           >
-            {/* keep the same thumbnail styles; change color per-project if you want */}
             <div className={`${proj.thumb} w-24 h-24 rounded-md`} />
 
-            {/* project content */}
             <div>
               <h3 className="text-gray-800 mt-1 text-lg font-medium">{proj.title}</h3>
               <a
